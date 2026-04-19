@@ -56,72 +56,79 @@
 
 :root {
   --radius: 0.625rem;
-  --blog-font-size: 16px;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --content-font-size: 16px;
+  
+  /* MODO CLARO: Invitación de la Troupe (Rojos más vivos) */
+  --background: #F9F4F0;
+  --foreground: #1A0A0E;
+  --card: #EDE4DC;
+  --card-foreground: #1A0A0E;
+  --popover: #EDE4DC;
+  --popover-foreground: #1A0A0E;
+  --primary: #D62839; /* Rojo Carmesí más claro y enérgico */
+  --primary-foreground: #F9F4F0;
+  --secondary: #543A4B;
+  --secondary-foreground: #F9F4F0;
+  --muted: #E2D6CB;
+  --muted-foreground: #7D757A;
+  --accent: #F2EBE4;
+  --accent-foreground: #D62839;
+  --destructive: #E63946;
+  --border: #DCD0C6;
+  --input: #DCD0C6;
+  --ring: #D62839;
+  
+  --chart-1: #D62839;
+  --chart-2: #543A4B;
+  --chart-3: #C08552;
+  --chart-4: #5E7161;
+  --chart-5: #3D2B33;
+
+  --sidebar: #EDE4DC;
+  --sidebar-foreground: #1A0A0E;
+  --sidebar-primary: #D62839;
+  --sidebar-primary-foreground: #F9F4F0;
+  --sidebar-accent: #E2D6CB;
+  --sidebar-accent-foreground: #D62839;
+  --sidebar-border: #DCD0C6;
+  --sidebar-ring: #D62839;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* MODO OSCURO: Ritual de la Pesadilla (Rojo fuego neón) */
+  --background: #0D080B;
+  --foreground: #F2F2F2;
+  --card: #1A1116;
+  --card-foreground: #F2F2F2;
+  --popover: #1A1116;
+  --popover-foreground: #F2F2F2;
+  --primary: #FF3A4C; /* El rojo "Fuego de Grimm" mucho más brillante */
+  --primary-foreground: #0D080B;
+  --secondary: #6B437B; /* Púrpura un poco más saturado */
+  --secondary-foreground: #F2F2F2;
+  --muted: #1A1116;
+  --muted-foreground: #9D8C96;
+  --accent: #2D1F26;
+  --accent-foreground: #FF3A4C;
+  --destructive: #FF5E6C;
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.15);
+  --ring: #FF3A4C;
+
+  --chart-1: #FF3A4C;
+  --chart-2: #8E44AD;
+  --chart-3: #FF8C42;
+  --chart-4: #A52A2A;
+  --chart-5: #4A192C;
+
+  --sidebar: #0D080B;
+  --sidebar-foreground: #F2F2F2;
+  --sidebar-primary: #FF3A4C;
+  --sidebar-primary-foreground: #0D080B;
+  --sidebar-accent: #1A1116;
+  --sidebar-accent-foreground: #FF3A4C;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #FF3A4C;
 }
 
 @layer base {
@@ -134,7 +141,7 @@
 }
 
 .text-secondary {
-  @apply text-[#909092] dark:text-[#909092];
+  @apply text-[#9D8C96] dark:text-[#9D8C96];
 }
 
 .font-hanken-grotesk {
@@ -173,8 +180,6 @@
   filter: blur(3px);
 }
 
-/* Removed global View Transition API overrides to allow Skiper toggle styles to apply */
-
 /* Custom button inner shadow */
 .btn-inner-shadow {
   box-shadow:
@@ -191,14 +196,14 @@
 
 .dark .btn-inner-shadow {
   box-shadow:
-    inset 0 1px 2px rgba(255, 255, 255, 0.05),
-    inset 0 2px 4px rgba(255, 255, 255, 0.03);
+    inset 0 1px 2px rgba(255, 58, 76, 0.15),
+    inset 0 2px 4px rgba(255, 58, 76, 0.08);
 }
 
 .dark .btn-inner-shadow:hover {
   box-shadow:
-    inset 0 1px 3px rgba(255, 255, 255, 0.08),
-    inset 0 2px 6px rgba(255, 255, 255, 0.06);
+    inset 0 1px 3px rgba(255, 58, 76, 0.3),
+    inset 0 2px 6px rgba(255, 58, 76, 0.2);
 }
 
 /* Custom skill inner shadow */
@@ -210,8 +215,8 @@
 
 .dark .skill-inner-shadow {
   box-shadow:
-    inset 0 1px 2px rgba(255, 255, 255, 0.06),
-    inset 0 1px 4px rgba(255, 255, 255, 0.03);
+    inset 0 1px 2px rgba(255, 58, 76, 0.1),
+    inset 0 1px 4px rgba(255, 58, 76, 0.05);
 }
 
 /* Custom tag inner shadow */
@@ -230,39 +235,41 @@
 
 .dark .tag-inner-shadow {
   box-shadow:
-    inset 0 1px 2px rgba(255, 255, 255, 0.04),
-    inset 0 1px 3px rgba(255, 255, 255, 0.03);
+    inset 0 1px 2px rgba(255, 58, 76, 0.08),
+    inset 0 1px 3px rgba(255, 58, 76, 0.04);
 }
 
 .dark .tag-inner-shadow:hover {
   box-shadow:
-    inset 0 1px 3px rgba(255, 255, 255, 0.06),
-    inset 0 2px 6px rgba(255, 255, 255, 0.04);
+    inset 0 1px 3px rgba(255, 58, 76, 0.1),
+    inset 0 2px 6px rgba(255, 58, 76, 0.08);
 }
 
 /* Blog font size controls */
 .prose {
-  font-size: var(--blog-font-size);
+  font-size: var(--content-font-size);
 }
 
 .prose p,
 .prose li,
 .prose blockquote {
-  font-size: var(--blog-font-size);
+  font-size: var(--content-font-size);
 }
 
 .prose h1 {
-  font-size: calc(var(--blog-font-size) * 2.25);
+  font-size: calc(var(--content-font-size) * 2.25);
+  @apply text-primary font-bold;
 }
 
 .prose h2 {
-  font-size: calc(var(--blog-font-size) * 1.875);
+  font-size: calc(var(--content-font-size) * 1.875);
+  @apply text-foreground/90;
 }
 
 .prose h3 {
-  font-size: calc(var(--blog-font-size) * 1.5);
+  font-size: calc(var(--content-font-size) * 1.5);
 }
 
 .prose h4 {
-  font-size: calc(var(--blog-font-size) * 1.25);
+  font-size: calc(var(--content-font-size) * 1.25);
 }

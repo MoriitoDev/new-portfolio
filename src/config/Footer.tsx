@@ -1,5 +1,5 @@
 export const footerConfig = {
-  developer: 'Ramxcodes',
+  developer: 'MoriitoDev',
   text: 'Design & Developed by',
   copyright: 'All rights reserved.',
 };

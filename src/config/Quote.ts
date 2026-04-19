@@ -24,4 +24,28 @@ export const quotes = [
     quote: `I’ll take a potato chip… AND EAT IT!`,
     author: 'Light Yagami, Death Note',
   },
+  {
+    quote: `If you don’t belong here, then just build a place where you do belong.`,
+    author: 'Zero Two, Darling in the Franxx',
+  },
+  {
+    quote: `Once we die, we’ll only be a statistic. It doesn’t matter what we were called.`,
+    author: 'Hiro, Darling in the Franxx',
+  },
+  {
+    quote: `To shoot, you must be prepared to be shot.`,
+    author: 'Lelouch Vi Britannia, Code Geass',
+  },
+  {
+    quote: `The world cannot be changed with pretty words alone.`,
+    author: 'Lelouch Vi Britannia, Code Geass',
+  },
+  {
+    quote: `No matter what lies you tell, you can't fool your own heart.`,
+    author: 'Meliodas, Nanatsu no Taizai',
+  },
+  {
+    quote: `Who decided that? I am the one who decides such things.`,
+    author: 'Escanor, Nanatsu no Taizai',
+  },
 ];

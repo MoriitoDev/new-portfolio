@@ -19,7 +19,7 @@ export default function FontSizeControls() {
 
   // Load font size from localStorage on mount
   useEffect(() => {
-    const savedFontSize = localStorage.getItem('blog-font-size');
+    const savedFontSize = localStorage.getItem('content-font-size');
     if (savedFontSize) {
       const size = parseInt(savedFontSize, 10);
       setFontSize(size);
@@ -31,7 +31,7 @@ export default function FontSizeControls() {
   const applyFontSize = (size: number) => {
     if (typeof window !== 'undefined') {
       document.documentElement.style.setProperty(
-        '--blog-font-size',
+        '--content-font-size',
         `${size}px`,
       );
     }
@@ -42,7 +42,7 @@ export default function FontSizeControls() {
     const clampedSize = Math.max(12, Math.min(24, newSize));
     setFontSize(clampedSize);
     applyFontSize(clampedSize);
-    localStorage.setItem('blog-font-size', clampedSize.toString());
+    localStorage.setItem('content-font-size', clampedSize.toString());
   };
 
   const handleIncrease = () => {

@@ -35,6 +35,7 @@ import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
 import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
+import Supabase from '@/components/technologies/Supabase';
 // Technology Components
 import TypeScript from '@/components/technologies/TypeScript';
 
@@ -49,25 +50,26 @@ export const skillComponents = {
   MongoDB: MongoDB,
   Prisma: Prisma,
   JavaScript: JavaScript,
+  Supabase: Supabase,
 };
 
 export const heroConfig = {
   // Personal Information
-  name: 'Ram',
-  title: 'A Full Stack web developer.',
-  avatar: '/assets/logo.png',
+  name: 'Mori',
+  title: 'Fullstack developer',
+  avatar: '/assets/logo.jpg',
 
   // Skills Configuration
   skills: [
     {
-      name: 'Typescript',
-      href: 'https://www.typescriptlang.org/',
-      component: 'TypeScript',
-    },
-    {
       name: 'React',
       href: 'https://react.dev/',
       component: 'ReactIcon',
+    },
+    {
+      name: 'Typescript',
+      href: 'https://www.typescriptlang.org/',
+      component: 'TypeScript',
     },
     {
       name: 'Next.js',
@@ -75,31 +77,25 @@ export const heroConfig = {
       component: 'NextJs',
     },
     {
-      name: 'Bun',
-      href: 'https://bun.sh/',
-      component: 'Bun',
+      name: 'NodeJs',
+      href: 'https://nodejs.org/',
+      component: 'NodeJs',
     },
     {
-      name: 'PostgreSQL',
-      href: 'https://www.postgresql.org/',
-      component: 'PostgreSQL',
+      name: 'Supabase',
+      href: 'https://supabase.com/',
+      component: 'Supabase',
     },
   ],
 
   // Description Configuration
   description: {
     template:
-      'I build interactive web apps using {skills:0}, {skills:1}, {skills:2}, {skills:3} and {skills:4}. With a focus on <b>UI</b> design. Enthusiastic about <b>Three.js</b>, driven by a keen eye for design.',
+      'I build websites with {skills:0}, {skills:1}, {skills:2}, {skills:3} and {skills:4}. Focused on <b>clean</b> design and <b>effortless</b> user experiences.',
   },
 
   // Buttons Configuration
   buttons: [
-    {
-      variant: 'outline',
-      text: 'Resume / CV',
-      href: '/resume',
-      icon: 'CV',
-    },
     {
       variant: 'default',
       text: 'Get in touch',
@@ -113,22 +109,22 @@ export const heroConfig = {
 export const socialLinks = [
   {
     name: 'X',
-    href: 'https://x.com/ramxcodes',
+    href: 'https://x.com/Moriilull',
     icon: <X />,
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/ramxcodes/',
+    href: 'https://www.linkedin.com/in/MoriitoDev/',
     icon: <LinkedIn />,
   },
   {
     name: 'Github',
-    href: 'https://github.com/ramxcodes',
+    href: 'https://github.com/MoriitoDev',
     icon: <Github />,
   },
   {
     name: 'Email',
-    href: 'mailto:ramxcodes@gmail.com',
+    href: 'mailto:moriicc@proton.me',
     icon: <Mail />,
   },
 ];

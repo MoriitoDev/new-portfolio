@@ -5,7 +5,6 @@ export type AnalyticsEvent = {
     | 'form_submit'
     | 'form_error'
     | 'content_view'
-    | 'chat_message_sent'
     | 'external_link_click';
   data: {
     [key: string]: string | boolean | number;
@@ -33,12 +32,8 @@ export type AnalyticsEventData = {
   };
   content_view: {
     contentId: string;
-    contentType: 'blog' | 'project' | 'experience';
+    contentType: 'project' | 'experience';
     section: string;
-  };
-  chat_message_sent: {
-    message: string;
-    sender: 'user' | 'assistant';
   };
   external_link_click: {
     url: string;

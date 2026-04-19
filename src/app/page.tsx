@@ -1,27 +1,29 @@
-import Container from '@/components/common/Container';
 import About from '@/components/landing/About';
-import Blog from '@/components/landing/Blog';
 import CTA from '@/components/landing/CTA';
 import Experience from '@/components/landing/Experience';
 import Github from '@/components/landing/Github';
 import Hero from '@/components/landing/Hero';
-import Journey from '@/components/landing/Journey';
 import Work from '@/components/landing/Projects';
-import Setup from '@/components/landing/Setup';
 import React from 'react';
 
 export default function page() {
   return (
-    <Container className="min-h-screen py-16">
-      <Hero />
-      <Experience />
-      <Work />
-      <About />
-      <Github />
-      <Blog />
-      <CTA />
-      <Setup />
-      <Journey />
-    </Container>
+    <div className="mx-auto max-w-7xl px-6 py-16 lg:py-24">
+      <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
+        {/* Sidebar */}
+        <aside className="lg:w-[350px] lg:sticky lg:top-24 h-fit">
+          <Hero />
+        </aside>
+
+        {/* Main Content */}
+        <main className="flex-1 space-y-24">
+          <Experience />
+          <Work />
+          <About />
+          <Github />
+          <CTA />
+        </main>
+      </div>
+    </div>
   );
 }

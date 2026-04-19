@@ -8,20 +8,20 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 
 export default function About() {
   return (
-    <Container className="mt-20">
+    <Container className="mt-20 max-w-none mx-0 px-0">
       <SectionHeading subHeading="About" heading="Me" />
       {/* About me */}
       <div className="mt-8 flex flex-col gap-4 md:flex-row">
         <Image
-          src="/assets/logo.png"
+          src={about.image}
           alt="About"
-          width={100}
-          height={100}
-          className="border-secondary size-60 rounded-md border-2 bg-blue-300 dark:bg-yellow-300"
+          width={240}
+          height={240}
+          className="border-secondary size-60 rounded-md border-2 bg-blue-300 dark:bg-yellow-300 object-cover"
         />
         <div className="mt-4">
           <h3 className="text-2xl font-bold">{about.name}</h3>
-          <p className="text-secondary mt-4">{about.description}</p>
+          <p className="text-secondary mt-2">{about.description}</p>
           <p className="text-secondary mt-8 font-bold">Skills</p>
           <div className="flex flex-wrap gap-2">
             {mySkills.map((skill) => (

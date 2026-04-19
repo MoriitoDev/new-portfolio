@@ -15,20 +15,20 @@ function ScrollArea({
 
   React.useEffect(() => {
     type WindowWithLenis = Window & { lenis?: Lenis };
-    if (typeof window !== 'undefined' && (window as WindowWithLenis).lenis) {
-      setLenisInstance((window as WindowWithLenis).lenis!);
+    if (typeof window !== 'undefined' && (window as unknown as WindowWithLenis).lenis) {
+      setLenisInstance((window as unknown as WindowWithLenis).lenis!);
     }
   }, []);
 
   const onMouseEnter = () => {
     if (lenisInstance) {
-      lenisInstance.stop(); // Stop Lenis scrolling when mouse inside chat
+      lenisInstance.stop(); // Stop Lenis scrolling when mouse inside scroll area
     }
   };
 
   const onMouseLeave = () => {
     if (lenisInstance) {
-      lenisInstance.start(); // Resume Lenis scrolling when mouse leaves chat
+      lenisInstance.start(); // Resume Lenis scrolling when mouse leaves scroll area
     }
   };
 
@@ -45,7 +45,7 @@ function ScrollArea({
         e.stopPropagation();
         // keep native scroll
       }
-      // If chat can't scroll further, allow Lenis/page scroll to happen
+      // If scroll area can't scroll further, allow Lenis/page scroll to happen
     }
   };
 

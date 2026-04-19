@@ -6,21 +6,22 @@ import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
 import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
+import Supabase from '@/components/technologies/Supabase';
+import TailwindCss from '@/components/technologies/TailwindCss';
 import TypeScript from '@/components/technologies/TypeScript';
 
 export const mySkills = [
   <ReactIcon key="react" />,
-  <Bun key="bun" />,
   <JavaScript key="javascript" />,
   <TypeScript key="typescript" />,
-  <MongoDB key="mongodb" />,
+  <Supabase key="supabase" />,
   <NextJs key="nextjs" />,
   <NodeJs key="nodejs" />,
-  <PostgreSQL key="postgresql" />,
-  <Prisma key="prisma" />,
+  <TailwindCss key="tailwindcss" />,
 ];
 
 export const about = {
-  name: 'Ramkrishna Swarnkar',
-  description: `I'm a Full Stack web developer and Open Source Contributor, I love building products to solve real-world problems. I'm specialized in building MVP's.`,
+  name: 'Mori',
+  image: '/assets/logo.jpg', 
+  description: `I craft clean, minimal websites that feel effortless. Focused on intuitive UX and purposeful design — nothing extra, nothing missing.`,
 };

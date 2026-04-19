@@ -25,7 +25,7 @@ import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import * as z from 'zod';
 
-import Chat from '../svgs/Chat';
+import { Send } from 'lucide-react';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, {
@@ -182,7 +182,7 @@ export default function ContactForm() {
                 </>
               ) : (
                 <>
-                  <Chat className="mr-2 h-4 w-4" />
+                  <Send className="mr-2 h-4 w-4" />
                   Send Message
                 </>
               )}
