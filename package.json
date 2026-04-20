@@ -1,5 +1,5 @@
 {
-  "name": "sleek-portfolio",
+  "name": "mori-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,12 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "format:prettierrc": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "format:prettierrcjson": "prettier --config .prettierrc.json --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "format:all": "bun run format:prettierrc && bun run format:prettierrcjson",
     "prepare": "husky",
     "knip": "knip",
-    "test-telegram": "bun src/validate/testTelegram.ts"
+    "deploy": "opennextjs-cloudflare",
+    "preview": "opennextjs-cloudflare --preview"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
