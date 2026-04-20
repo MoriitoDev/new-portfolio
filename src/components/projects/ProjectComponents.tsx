@@ -1,18 +1,11 @@
-import Bun from '@/components/technologies/Bun';
-import JavaScript from '@/components/technologies/JavaScript';
-import MongoDB from '@/components/technologies/MongoDB';
-// Import technology components
 import NextJs from '@/components/technologies/NextJs';
-import NodeJs from '@/components/technologies/NodeJs';
-import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
 import TypeScript from '@/components/technologies/TypeScript';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import React from 'react';
 
-import { CodeCopyButton } from '../blog/CodeCopyButton';
+import { CodeCopyButton } from '@/components/common/CodeCopyButton';
 
 // Technology mapping for dynamic components
 const TechnologyComponents: Record<string, React.ComponentType> = {
@@ -22,19 +15,6 @@ const TechnologyComponents: Record<string, React.ComponentType> = {
   react: ReactIcon,
   TypeScript: TypeScript,
   typescript: TypeScript,
-  JavaScript: JavaScript,
-  javascript: JavaScript,
-  'Node.js': NodeJs,
-  nodejs: NodeJs,
-  node: NodeJs,
-  MongoDB: MongoDB,
-  mongodb: MongoDB,
-  PostgreSQL: PostgreSQL,
-  postgresql: PostgreSQL,
-  Prisma: Prisma,
-  prisma: Prisma,
-  Bun: Bun,
-  bun: Bun,
 };
 
 // Custom Technology component for displaying technology badges with icons
